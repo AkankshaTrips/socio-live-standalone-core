@@ -73,31 +73,11 @@ var $eventName = $('[name="event_name"]');
 var $settingsPanel = $('div[class="panel-inner"]');
 
 var users = {
-  1: new BasicUser(1, "Desmond", "Strickland", "Fishery", Date.now()),
+  1: new BasicUser(1, "Akanksha", "Tripathy", "Student", Date.now()),
   2: new BasicUser(2, 'Thaddeus','Galvan','Professional Training & Coaching', Date.now()),
   3: new BasicUser(3, 'Lamont','Friedman','Automotive', Date.now()),
   4: new BasicUser(4, 'Martin','Holland','Information Technology and Services', Date.now()),
   5: new BasicUser(5, 'Nancy','Carr','Information Technology and Services', Date.now()),
-  6: new BasicUser(6, 'Graham','Norris',' Ceramics & Concrete', Date.now()),
-  7: new BasicUser(7, 'Royce','Lester','Veterinary', Date.now()),
-  8: new BasicUser(8, 'Emily','Herman','Alternative Dispute Resolution', Date.now()),
-  9: new BasicUser(9, 'Odessa','Clay','Warehousing', Date.now()),
-  10: new BasicUser(10, 'Enid','Castaneda','Airlines/Aviation', Date.now()),
-  11: new BasicUser(11, 'Mara','Schultz','Facilities Services', Date.now()),
-  12: new BasicUser(12, 'Romeo','Navarro','Information Technology and Services', Date.now()),
-  13: new BasicUser(13, 'Jess','Clay','Banking', Date.now()),
-  14: new BasicUser(14, 'Aimee','Guerrero','Biotechnology', Date.now()),
-  15: new BasicUser(15, 'Dino','Payne','Computer Games', Date.now()),
-  16: new BasicUser(16, 'Susie','Velasquez','Nanotechnology', Date.now()),
-  17: new BasicUser(17, 'Velma','Walton','Restaurants', Date.now()),
-  18: new BasicUser(18, 'Rosario','Cook','Professional Training & Coaching', Date.now()),
-  19: new BasicUser(19, 'Maximo','Morgan','Transportation/Trucking/Railroad', Date.now()),
-  20: new BasicUser(20, 'Bettye','Sandoval','Tobacco', Date.now()),
-  21: new BasicUser(21, 'Eve','Malone','Judiciary', Date.now()),
-  22: new BasicUser(22, 'Daryl','Carney','Real Estate', Date.now()),
-  23: new BasicUser(23, 'Britney','Pennington','Recreational Facilities and Services', Date.now()),
-  24: new BasicUser(24, 'Phyllis','Chung','International Affairs', Date.now()),
-  25: new BasicUser(25, 'Susanne','Clark','Facilities Services', Date.now())
 };
 
 var orderedUsers = [];
