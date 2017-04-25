@@ -10,7 +10,6 @@ function BasicUser(id, first, last, info, join_time) {
         return this.first + " " + this.last;
     };
 
-
     this.buildHtmlForAttendeeDrawing = function() {
         var thisUserDiv = document.createElement('div');
         thisUserDiv.className = "user-drawing-element-div";
@@ -29,7 +28,6 @@ function BasicUser(id, first, last, info, join_time) {
         return thisUserDiv;
     }
 }
-
 
 function getRandomInterval() {
   return parseInt(Math.random() * ((Math.random() * 10) * 1000));
@@ -72,13 +70,8 @@ var $title = $('title');
 var $eventName = $('[name="event_name"]');
 var $settingsPanel = $('div[class="panel-inner"]');
 
-var users = {
-  1: new BasicUser(1, "Akanksha", "Tripathy", "Student", Date.now()),
-  2: new BasicUser(2, 'Thaddeus','Galvan','Professional Training & Coaching', Date.now()),
-  3: new BasicUser(3, 'Lamont','Friedman','Automotive', Date.now()),
-  4: new BasicUser(4, 'Martin','Holland','Information Technology and Services', Date.now()),
-  5: new BasicUser(5, 'Nancy','Carr','Information Technology and Services', Date.now()),
-};
+//Dictonary of users
+users = { i: new BasicUser(i,"","","","") };
 
 var orderedUsers = [];
 var nextUser = 0;
@@ -179,6 +172,7 @@ function openAttendeeDrawing() {
 function setupSlotMachine(usersDictionary) {
   var $carousel = $('#carousel');
   var current = 0;
+  console.log(users);
   for(var key in usersDictionary) {
     var thisUser = usersDictionary[key];
     orderedUsers[current] = {index: current, id: thisUser.id, user: thisUser};
